@@ -200,54 +200,6 @@ int main()
     cout<<"\n CGPA - "<<setprecision(3)<<cgpa;
             break;
             }
-        case 5:
-            {
-
-                map<string,int>credits;
-    float total=0;
-    string gr1,gr2,gr3,gr4,gr5,gr6,gr7,gr8;
-     map<string, int>::iterator itr;
-
-    credits["ENVIRONMENTAL SCIENCES"]=3;
-    credits["FUNDAMENTALS OF LANGUAGE AND LINGUISTICS"]=3;
-    credits["OBJECT ORIENTED PROGRAMMING AND ADVANCED DATA STRUCTURES"]=3;
-    credits["DESIGN AND ANALYSIS OF ALGORITHMS"]=3;
-    credits["OPERATING SYSTEMS"]=3;
-    credits["OPERATING SYSTEMS LABORATORY"]=2;
-    credits["ADVANCED DATA STRUCTURES LABORATORY"]=2;
-    credits["COMPUTER ARCHITECTURE"]=3;
-
-    cout<<"\n \n ENTER GRADES";
-
-    cout<<"\n SUBJECT NAME \t\t\t             GRADE\n";
-    cout<<"\n ENVIRONMENTAL SCIENCES:";
-    cin>>gr1;
-    total+=points[gr1]*credits["ENVIRONMENTAL SCIENCES"];
-    cout<<"\nFUNDAMENTALS OF LANGUAGE AND LINGUISTICS:";
-    cin>>gr2;
-    total+=points[gr2]*credits["FUNDAMENTALS OF LANGUAGE AND LINGUISTICS"];
-     cout<<"\nOBJECT ORIENTED PROGRAMMING AND ADVANCED DATA STRUCTURES:";
-    cin>>gr3;
-    total+=points[gr3]*credits["OBJECT ORIENTED PROGRAMMING AND ADVANCED DATA STRUCTURES"];
-     cout<<"\n DESIGN AND ANALYSIS OF ALGORITHMS:";
-    cin>>gr4;
-    total+=points[gr4]*credits["DESIGN AND ANALYSIS OF ALGORITHMS"];
-    cout<<"\n OPERATING SYSTEMS:";
-    cin>>gr5;
-    total+=points[gr5]*credits["OPERATING SYSTEMS"];
-    cout<<"\nOPERATING SYSTEMS LABORATORY:";
-    cin>>gr6;
-    total+=points[gr6]*credits["OPERATING SYSTEMS LABORATORY"];
-     cout<<"\nCOMPUTER ARCHITECTURE:";
-    cin>>gr7;
-    total+=points[gr7]*credits["COMPUTER ARCHITECTURE"];
-    cout<<"\nADVANCED DATA STRUCTURES LABORATORY:";
-    cin>>gr8;
-    total+=points[gr8]*credits["ADVANCED DATA STRUCTURES LABORATORY"];
-    float cgpa=total/22.0;
-    cout<<"\n CGPA - "<<setprecision(3)<<cgpa;
-            break;
-            }
         }
         cout<<"\n Do you want to continue(Y/N)";
         cin>>y;
